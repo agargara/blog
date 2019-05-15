@@ -5,3 +5,6 @@
 	path = public
 	url = https://github.com/agargara/agargara.github.io.git
 	branch = master
+[submodule "themes/hugo-flex-plus"]
+	path = themes/hugo-flex-plus
+	url = https://github.com/agargara/hugo-flex-plus.git

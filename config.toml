@@ -2,3 +2,5 @@ baseURL = "https://agargara.github.io/"
 languageCode = "en-us"
 title = "▲◆▲◤◆▲◤▲"
 theme = "hugo-flex-plus"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"

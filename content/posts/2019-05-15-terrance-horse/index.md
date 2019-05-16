@@ -2,8 +2,10 @@
 layout: blog
 title: Terrance Horse
 date: 2019-05-15T04:34:29.775Z
-thumbnail: /images/uploads/terrance_horse.png
-rating: 5
+categories: literature
+tags:
+    - horse
+    - terrance
 ---
 １７，０００　ＹＥＡＲＳ　ＩＮ　ＴＨＥ　ＦＵＴＵＲＥ　
 

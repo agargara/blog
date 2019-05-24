@@ -1,4 +1,4 @@
-baseURL = "https://agargara.github.io/"
+baseURL = "http://agargara.com/blog/"
 languageCode = "en-us"
 title = "▲◆▲◤◆▲◤▲"
 theme = "hugo-flex-plus"

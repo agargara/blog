@@ -1,0 +1,8 @@
+#!/bin/sh
+USER=agargara
+HOST=agargara.com
+DIR=agargara.com/blog/
+
+hugo && rsync -avz --delete public/ ${USER}@${HOST}:~/${DIR}
+
+exit 0

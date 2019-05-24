@@ -1,0 +1,366 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    
+    ▲◆▲◤◆▲◤▲
+    
+  </title>
+  
+  <link rel="alternate" type="application/rss+xml" href="http://agargara.com/blog/index.xml" title="▲◆▲◤◆▲◤▲">
+  
+  
+  <link rel="stylesheet" href="http://agargara.com/blog/css/base.min.132347ec3b1a6b0c026d39dfa9cd6b71493d0c9398d5a6552394248026c092f6.css" integrity="sha256-EyNH7DsaawwCbTnfqc1rcUk9DJOY1aZVI5QkgCbAkvY=">
+  
+  <meta name="generator" content="Hugo 0.55.5" />
+</head>
+<body>
+  <nav class="u-background">
+  <div class="u-wrapper">
+    <ul class="Banner">
+      <li class="Banner-item Banner-item--title">
+        <a class="Banner-link u-clickable" href="http://agargara.com/blog/">▲◆▲◤◆▲◤▲</a>
+      </li>
+      
+      <li class="Banner-item">
+        <a class="Banner-link u-clickable" href="http://agargara.com/blog/about/">About</a>
+      </li>
+      
+      <li class="Banner-item">
+        <a class="Banner-link u-clickable" href="http://agargara.com/blog/posts/">Posts</a>
+      </li>
+      
+      <li class="Banner-item">
+        <a class="Banner-link u-clickable" href="http://agargara.com/blog/tags/">Tags</a>
+      </li>
+      
+      <li class="Banner-item">
+        <a class="Banner-link u-clickable" href="http://agargara.com/blog/categories/">Categories</a>
+      </li>
+      
+      <li class="Banner-item">
+        <a class="Banner-link u-clickable" href="http://agargara.com/blog/index.xml">RSS</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+  <main>
+    <div class="u-wrapper">
+      <div class="u-padding">
+        
+
+
+<article>
+  <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="http://agargara.com/blog/posts/2019-05-19_kmg_first_weekend/" rel="bookmark">KMG First Weekend</a>
+  </h2>
+  
+  <time datetime="2019-05-19T14:29:28&#43;09:00">
+    19 May, 2019
+  </time>
+  
+</header>
+
+  
+
+<figure>
+	<img src="/blog/posts/2019-05-19_kmg_first_weekend/images/masked_agargara.jpg" alt="masked agargara" />
+	
+</figure>
+
+
+
+<p>My first weekend at Kyoto Maker&rsquo;s Garage. The current manager, Connor, is showing me the ropes.</p>
+
+<p>Day 1: Focused on our largest CNC machine, a <a href="http://www.cncrouterparts.com/pro4848-4-x-4-cnc-router-kit-p-251.html">PRO4848</a> that Connor built from a kit. Kenji, one of our staff, is building a wooden car to be powered by Arduino. The wooden parts of the car will be carved out of MDF (Medium-density fibreboard) on the CNC machine.</p>
+
+
+
+<figure>
+	<img src="/blog/posts/2019-05-19_kmg_first_weekend/images/cnc_machine.jpg" alt="CNC machine" />
+	
+</figure>
+
+
+
+<p>If you don&rsquo;t know how a CNC machine works, like me, it basically carves shapes out of a block of material, such as wood, plastic, or even metal. Although more expensive machines can move the mill (cutting tool) in all three dimensions, the 4848 is top-down only, which means you have to do some planning ahead with your 3D model.</p>
+
+<p>The basic process of CNC:</p>
+
+<ol>
+<li>Design your 3D model. We use Autodesk Fusion 360.</li>
+<li>Lay out the parts of your 3D model flat.</li>
+<li>Create a tool path: carefully plan where the CNC machine will cut, and what endmills and drill bits you will use for each path.</li>
+<li>Calibrate the machine.</li>
+<li>Execute each tool path, manually changing the bit (endmill or drill bit) in between each path, and re-zeroing the Z-axis.</li>
+<li>Chisel out and sand the tabs.</li>
+</ol>
+
+<p>The most difficult part, in my opinion, was planning the tool path. There are many variables to keep in mind, such as the feeds (how much material you are cutting) and speeds (how fast the tool is moving.) You generally want to cut the inner parts out before the outer parts, to avoid pieces of material flying out. You should also use tabs to keep parts in place, and chisel+sand the tabs when finished.</p>
+
+<p>Day 2:
+Connor gave an excellent tutorial on designing and modeling a part for CNC from scratch using Fusion 360. He showed us a wooden toy spanner wrench that he made for his 1-year-old daughter.</p>
+
+<p><img src="images/fusion_screenshot.png" alt="Fusion Screenshot" />
+
+
+<figure>
+	<img src="/blog/posts/2019-05-19_kmg_first_weekend/images/fusion_screenshot.png" alt="Fusion Screenshot" />
+	
+</figure>
+
+</p>
+
+<p>The tutorial was straightforward and easy to understand. My main takeaways, besides all the useful keyboard shortcuts, were:</p>
+
+<ol>
+<li>Define as many distances as possible using User-defined Parameters, so that it&rsquo;s easy to adjust later.</li>
+<li>Try to keep all lines or shapes constrained to each other in some way, also for easier adjusting.</li>
+<li>&lsquo;Construction&rsquo; lines (dotted) are useful as guides for constraining or measuring model lines.</li>
+</ol>
+
+<p>After lunch, I tried out one of the 3D printers, a Prusa 2.0. 3D printing is considerably easier than CNC, most times all you have to do is load a model into a slicer, slice, and print.</p>
+
+<p>Things to keep in mind: layer height, amount of infill, type of filament, and the shape of your model. Some models will need supports (which can be automatically generated). Most desktop 3D printers use Fusion Deposition Modeling (FDM) which works by laying one layer at a time. This means that any parts of the model which float will need supports, or they will sag. A way to get around the need for supports is to print multiple flat pieces and glue them together with superglue.</p>
+
+<p>I printed a <a href="https://www.thingiverse.com/thing:3576952">Flexi Cat</a> as a first project, using a sample spool of <a href="https://shop.prusa3d.com/en/42-prusament">Prusament PLA</a> and 0.15 micron layer height. The smaller the layer height, the more detailed and smooth the resulting print.</p>
+
+
+
+<figure>
+	<img src="/blog/posts/2019-05-19_kmg_first_weekend/images/flexi_cat.jpg" alt="Flexi Cat" />
+	
+</figure>
+
+
+
+
+
+<figure>
+	<img src="/blog/posts/2019-05-19_kmg_first_weekend/images/flexi_cat2.jpg" alt="Flexi Cat 2" />
+	
+</figure>
+
+
+
+<p>Although simpler than CNC, there are still a lot of small details to keep in mind when 3D printing. I hope to ingrain all these details through experience and watching more tutorials.</p>
+
+<p>We are thinking of buying a new 3D printer, the <a href="https://www.projectr3d.com/products/xrxofoq21t1o786l8apcuympvjmjwj-42ps7">RailCore II 300ZL.</a> The rail system allows it to print much more quickly and accurately than our current 3D printers, and it can also print projects of a much larger size. It comes as a kit, and I think building it will be a very educational experience. The only hurdle will be convincing our beloved CEO to provide the funds!</p>
+
+  
+<footer>
+  <ul class="Tags">
+    
+    
+    
+    <li class="Tags-item u-background">
+      <a class="Tags-link u-clickable" href="http://agargara.com/blog/tags/kmg/" rel="tag">KMG</a>
+    </li>
+    
+    
+    
+    
+    <li class="Tags-item u-background">
+      <a class="Tags-link u-clickable" href="http://agargara.com/blog/tags/3d-printing/" rel="tag">3D Printing</a>
+    </li>
+    
+    
+    
+    
+    <li class="Tags-item u-background">
+      <a class="Tags-link u-clickable" href="http://agargara.com/blog/tags/cnc/" rel="tag">CNC</a>
+    </li>
+    
+    
+    
+    
+    <li class="Tags-item u-background">
+      <a class="Tags-link u-clickable" href="http://agargara.com/blog/tags/fusion-360/" rel="tag">Fusion 360</a>
+    </li>
+    
+    
+  </ul>
+</footer>
+
+</article>
+
+<article>
+  <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="http://agargara.com/blog/posts/2019-05-16-kujikuji/" rel="bookmark">Kujikuji</a>
+  </h2>
+  
+  <time datetime="2019-05-16T04:34:29Z">
+    16 May, 2019
+  </time>
+  
+</header>
+
+  
+
+<figure>
+	<img src="/blog/posts/2019-05-16-kujikuji/images/kujira_1.jpg" alt="Whale Pillow" />
+	
+</figure>
+
+
+
+<p>This whale pillow, officially known as Kanaloa, but affectionately known as <strong>Kujikuji</strong>, is perhaps the greatest pillow ever created. The design is simple, elegant, and extremely cute. Its round, puffy shape makes it the ideal cuddling companion. I cannot over-emphasize how impressed I am by the design of this deceptively simple toy. The curves are so satisying, and every detail is perfect and cute: the tiny flippers, the perky tail, the sleeping eyes.</p>
+
+
+
+<figure>
+	<img src="/blog/posts/2019-05-16-kujikuji/images/kujira_2.jpg" alt="Whale Pillow" />
+	
+</figure>
+
+
+
+<p>So many stuffed animals fall short on cuteness. I know cuteness is extremely subjective, but there is a large divide between a masterpiece like Kujikuji and a mediocre teddy bear like this:</p>
+
+
+
+<figure>
+	<img src="/blog/posts/2019-05-16-kujikuji/images/uncute_bear.jpg" alt="Uncute Bear" />
+	
+</figure>
+
+
+
+<p>While I concede that some people would find the above bear cute, and it is moderately so, I find its design sorely lacking. So what&rsquo;s wrong with this bear, and what makes it so inferior to Kujikuji? Here are some of my theories:</p>
+
+<ul>
+<li>The raised eyebrows. Cute eyebrows are difficult to manage. No eyebrows are usually a safer bet.</li>
+<li>The smile. Stuffed animals are usually cuter without mouths, or with an  inverted Y mouth.</li>
+<li>The bloody red paw.</li>
+<li>The swirly eyes. Button eyes, black marble eyes, or simple lines are cuter.</li>
+<li>The lanky shape. The cutest stuffed animals are rotund, often to the point of absurdity.</li>
+</ul>
+
+<p>I believe the underlying theme to all these criticisms is: <strong>the simpler, the cuter.</strong> However, this is just one theory to explain what I deeply feel in my gut. The widely accepted theory of cuteness is that juvenile features associated with babies are cute: large eyes, large heads, small chins, etc. However, I have encountered a variety of stuffed animals which run counter to these features, with strange shapes, small eyes, etc. And yet they are undeniably cute. I believe more careful study and analysis is warranted, in order to develop a complete and rigid theory of cuteness. More on this subject later.</p>
+
+  
+<footer>
+  <ul class="Tags">
+    
+    
+    
+    <li class="Tags-item u-background">
+      <a class="Tags-link u-clickable" href="http://agargara.com/blog/tags/whale/" rel="tag">whale</a>
+    </li>
+    
+    
+    
+    
+    <li class="Tags-item u-background">
+      <a class="Tags-link u-clickable" href="http://agargara.com/blog/tags/stuffed-animals/" rel="tag">stuffed animals</a>
+    </li>
+    
+    
+    
+    
+    <li class="Tags-item u-background">
+      <a class="Tags-link u-clickable" href="http://agargara.com/blog/tags/cute/" rel="tag">cute</a>
+    </li>
+    
+    
+    
+    
+    <li class="Tags-item u-background">
+      <a class="Tags-link u-clickable" href="http://agargara.com/blog/tags/philosophy/" rel="tag">philosophy</a>
+    </li>
+    
+    
+  </ul>
+</footer>
+
+</article>
+
+<article>
+  <header class="Heading">
+  <h2 class="Heading-title">
+    <a class="Heading-link u-clickable" href="http://agargara.com/blog/posts/2019-05-15-terrance-horse/" rel="bookmark">Terrance Horse</a>
+  </h2>
+  
+  <time datetime="2019-05-15T04:34:29Z">
+    15 May, 2019
+  </time>
+  
+</header>
+
+  <p>１７，０００　ＹＥＡＲＳ　ＩＮ　ＴＨＥ　ＦＵＴＵＲＥ　</p>
+
+<p>Silence.</p>
+
+<p>A single &lsquo;neigh&rsquo; rings out across the land.</p>
+
+<p>A horse named Terrance gallops across grassy fields, littered with the typical post-apocalyptic detritus. His titanium hooves fear not the jagged edges of a dead society.</p>
+
+
+
+<figure>
+	<img src="/blog/posts/2019-05-15-terrance-horse/images/terrance_horse.png" alt="Terrance Horse" />
+	
+</figure>
+
+
+
+  
+<footer>
+  <ul class="Tags">
+    
+    
+    
+    <li class="Tags-item u-background">
+      <a class="Tags-link u-clickable" href="http://agargara.com/blog/tags/horse/" rel="tag">horse</a>
+    </li>
+    
+    
+    
+    
+    <li class="Tags-item u-background">
+      <a class="Tags-link u-clickable" href="http://agargara.com/blog/tags/terrance/" rel="tag">terrance</a>
+    </li>
+    
+    
+  </ul>
+</footer>
+
+</article>
+
+
+
+
+      </div>
+    </div>
+  </main>
+  
+  
+</body>
+</html>

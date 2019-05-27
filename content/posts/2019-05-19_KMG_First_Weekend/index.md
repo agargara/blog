@@ -6,6 +6,7 @@ categories: journal
 tags:
   - KMG
   - 3D Printing
+  - FDM
   - CNC
   - Fusion 360
 ---
@@ -34,7 +35,6 @@ The most difficult part, in my opinion, was planning the tool path. There are ma
 Day 2:
 Connor gave an excellent tutorial on designing and modeling a part for CNC from scratch using Fusion 360. He showed us a wooden toy spanner wrench that he made for his 1-year-old daughter.
 
-![Fusion Screenshot](images/fusion_screenshot.png)
 {{< img "*fusion_screenshot*" "Fusion Screenshot" >}}
 
 The tutorial was straightforward and easy to understand. My main takeaways, besides all the useful keyboard shortcuts, were:

@@ -1,7 +1,10 @@
-{{ $img := $.Page.Resources.GetMatch (printf "images/%v" (.Get 0)) }}
-{{ with  $img }}
+{{ $original := $.Page.Resources.GetMatch (printf "images/%v" (.Get 0)) }}
+{{ with $original }}
+{{ $img := $original.Resize "800x" }}
 <figure>
-	<img src="{{ .RelPermalink }}" alt="{{ $.Get 1 }}" />
+	<a target="_blank" href="{{ .RelPermalink }}">
+	<img src="{{ $img.RelPermalink }}" alt="{{ $.Get 1 }}" />
+	</a>
 	<!-- <figcaption>{{ $.Get 1 }}</figcaption> -->
 </figure>
 {{ end }}

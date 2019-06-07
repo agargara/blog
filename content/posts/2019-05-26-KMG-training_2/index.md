@@ -1,7 +1,7 @@
 ---
 layout: blog
-draft: true
-title: "KMG Second Weekend: Sunday Injection Molds"
+draft: false
+title: "KMG Second Weekend: Sunday ー Injection Molds"
 date: 2019-05-26T13:13:38+09:00
 categories: journal
 tags:
@@ -12,18 +12,20 @@ tags:
   - SLA
 ---
 
-The last official day of my training with Connor. In the morning, Connor showed me how to design an injection mold in Fusion 360 and print it on the Form 2.
+The last official day of KMG training. In the morning, Connor showed me how to design an injection mold in Fusion 360 and print it on the Form 2.
 
 # Injection molds
 An injection mold is a reusable mold into which you can inject molten plastic, allowing one to easily create many copies of a single model. KMG has an injection mold machine, which takes plastic pellets, melts them down, and injects them into a mold.
 
 When designing an injection mold, one should first check the dimensions of the *sprue*, or the tube through which plastic enters the mold. The dimensions, along with a sample diagram of a custom mold, can be found in the injection mold machine's handbook.
 
+{{< img "injection_mold_manual.jpg" "Injection mold machine handbook" >}}
+
 A mold must be split into two halves, and every face in each half must slope inwards, away from the meeting point, otherwise one will not be able to smoothly remove the object from the mold. The sprue should enter at the midpoint of the two halves.
 
 One must also include a small hole for air ventilation, 1/8" wide, .002mm deep. The injection mold machine comes with metal support cases, into which you can insert a custom mold.
 
-{{< img >}}
+{{< img "injection_mold_example.jpg" "sample injection mold" >}}
 
 However, Connor thinks it may be possible to use a mold without these support cases, in which case we would have more freedom in the size and shape of our custom molds. However, this still needs to tested.
 
@@ -32,13 +34,13 @@ To create a plastic injection mold, one must use plastic resistant to high tempe
 # Stereolithography (SLA) 3D Printing
 The Form 2 is an SLA, or Stereolithography printer. A laser hardens photosensitive resin into plastic one layer at a time. The build platform is at the top of the machine, and lowers into a tank of resin which is then cured by a laser. Objects are thus printed from the top down, opposite to the bottom up process of FDM (fused deposition modeling) printer which extrudes molten plastic down onto a bed.
 
-{{< img >}}
+{{< img "form2.jpg" "Form 2" >}}
 
-There are a few <i>gotcha</i>s when it comes to SLA printing. One such *gotcha* is "cupping", which is caused by pressure imbalances in hollow chambers. Thus if your model has any hollow parts, one must create drain holes with a diameter of at least 3.5mm to prevent uncured resin from getting trapped inside the print. The drain holes should be tangent to cavities in the object.
+There are a few problems to keep in mind when it comes to SLA printing. One such problem is "cupping", which is caused by pressure imbalances in hollow chambers. Thus if your model has any hollow parts, one must create drain holes with a diameter of at least 3.5mm to prevent uncured resin from getting trapped inside the print. The drain holes should be tangent to cavities in the object.
 
-Another *gotcha* is that too much surface area contacting the window will cause the print to be pulled off of the build platform. This, combined with the cupping problem, means that it is quite difficult to print an object flat on the bed.
+Another problem is that too much surface area contacting the window will cause the print to be pulled off of the build platform. This, combined with the cupping problem, means that it is quite difficult to print an object flat on the bed.
 
-A third *gotcha* is that printing an object at a straight angle can result in small slivers of plastic, which cannot be effectively held up, even with supports.
+A third problem is that printing an object at a straight angle can result in small slivers of plastic, which cannot be effectively held up, even with supports.
 
 The safest way to get around the above problems is to print at an angle, using support pieces to hold the object together. Supports are a pain, as they must be cut off and sanded, but printing at an angle, smallest point touching the bed, is the most surefire method of printing without any problems.
 
@@ -66,3 +68,8 @@ Other Form 2 maintenance notes:
 
 - Most parts can be cleaned with IPA, except orange polycarbonate (cover, resin tank) and Acrylic (resin tank window) which should be cleaned with Novus 1. Make sure to use a soft microfiber sheet to clean the glass, which is particularly delicate.
 - If the amber cover cracks, it can be replaced for free by contacting Formlabs.
+
+{{< img "rc_car.jpg" "RC Car" >}}
+{{< img "rc_jump.jpg" "RC Car" >}}
+
+After a hard day designing and printing an injection mold, Connor blew off some steam by jumping an RC Car.

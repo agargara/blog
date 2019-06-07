@@ -1,7 +1,7 @@
 ---
 layout: blog
 draft: true
-title: "KMG Second Weekend: CNC milling a custom coaster"
+title: "KMG Second Weekend: Sunday ー CNC milling a custom coaster"
 date: 2019-05-26T18:24:37+09:00
 categories: journal
 tags:
